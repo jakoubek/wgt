@@ -1,0 +1,2 @@
+[% USE date(format = '%Y-%m-%d %H:%M:%S+01:00', locale = 'de_DE') %]
+[% RELATIVE = 1 %]

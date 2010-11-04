@@ -1,0 +1,14 @@
+[%
+page.description = 'Demo-Website f&uuml;r die Veranstaltung Web-Grundtechniken'
+%]
+
+# [% page.title %]
+
+Das ist die [% page.description %] von [% $page.author %].
+
+## Allgemeine Seiten
+
+* [Impressum](/impressum)
+* [Kolophon](/kolophon)
+* [Sitemap](/sitemap)
+

@@ -1,0 +1,42 @@
+body {
+  font-family: serif;
+}
+
+div#menu {
+  float: left;
+  border-right: 1px solid #ccf;
+}
+
+div#content {
+  
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: x-large;
+  border-bottom: 1px solid #ccf;
+  color: grey;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-size: large;
+}
+
+h3 {
+  font-weight: normal; 
+}
+
+div#breadcrumb {
+  font-size: smaller;
+}
+
+div#footer {
+  font-size: smaller;
+  padding-top: 0.2em;
+  border-top: 1px solid #ccf;
+}
+
+ul {
+  list-style-type: square; 
+}

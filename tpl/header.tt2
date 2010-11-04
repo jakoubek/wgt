@@ -1,0 +1,18 @@
+[% INCLUDE doctype.tt2 %]
+<head>
+<title>[% page.title %]</title>
+<meta charset="UTF-8" />
+<meta name="language" content="de" />
+<meta name="description" content="[% page.description %]" />
+<meta name="keywords" content="[% page.keywords %]" />
+<meta name="date" content="[% page.date %]" />
+<meta name="author" content="[% page.author %]" />
+<meta name="generator" content="Template Toolkit's ttree" />
+<meta name="robots" content="[% page.robots %]" />
+<link rel="stylesheet" type="text/css" href="default.css" media="screen, projection, print" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-sa/3.0/de/" />
+</head>
+<body>
+
+<div class="page_margins">
+<div class="page">

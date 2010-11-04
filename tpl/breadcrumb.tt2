@@ -1,0 +1,36 @@
+[% PERL %]
+use File::Basename;
+use File::Spec::Functions;
+use HTML::LinkList qw(breadcrumb_trail);
+
+my $url = '[% template.name %]';
+my @ext = ( '.txt' );
+my $filename = basename($url, @ext);
+if ($filename ne 'index') {
+  $url = catfile('/', dirname($url), $filename);
+} else {
+  $url = catdir('/', dirname($url));
+}
+
+my %labels = ( '/' => 'Startseite',
+                '/ueber/' => '&Uuml;ber',
+  );
+
+my $links = breadcrumb_trail(
+                current_url=> $url,
+                hide_ext   => 1,
+                labels=>\%labels,
+                links_head=>'<div id="breadcrumb">',
+                links_foot=>"</div>\n\n",
+                subtree_head=>'',
+                subtree_foot=>'',
+                pre_item=>'',
+                post_item=>'',
+                pre_active_item=>'<em>',
+                post_active_item=>'</em>',
+                item_sep=>"\n",
+                tree_sep=>' &gt; ',
+        );
+print $links;
+
+[% END %]
