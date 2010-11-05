@@ -1,5 +1,3 @@
-[% PROCESS config.tt2 %]
-[% PROCESS page_variables.tt2 %]
 [% INCLUDE header.tt2 %]
 [% INCLUDE breadcrumb.tt2 %]
 [%# INCLUDE pageheader.tt2 %]
@@ -8,4 +6,4 @@
 [% FILTER multimarkdown %]
 [% content %]
 [%- END %]
-[% PROCESS footer.tt2 %]
+[% INCLUDE footer.tt2 %]

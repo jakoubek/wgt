@@ -1,9 +1,0 @@
-[% DEFAULT
-page.author      = 'Oliver Jakoubek'
-page.title       = 'Web-Grundtechniken'
-page.description = 'Demo-Website f&uuml;r die Veranstaltung Web-Grundtechniken'
-page.keywords    = 'privat, pers&ouml;nlich, website, oliver, jakoubek, markdorf'
-page.date        = date.format(template.modtime)
-page.robots      = 'index,follow'
-about.copyright = '2010'
-%]
